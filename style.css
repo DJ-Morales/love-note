@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --accent: rgb(243, 155, 168);
+}
+
+body {
+  min-height: 100vh;
+  background: url("sj-objio-XFWiZTa2Ub0-unsplash.jpg");
+}
+
+.viewport {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 48px 18px;
+}
+
+.letter-wrapper {
+  width: min(1100px, 92vw);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+h1 {
+  font-family: "Playwrite AT", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+
+  font-size: clamp(38px, 4vw, 56px);
+  text-align: center;
+}
+
+.letter {
+  width: min(1300px, 94vw);
+  padding: clamp(22px, 3vw, 52px);
+  background-color: white;
+  background-image: url("wmremove-transformed.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: black;
+  border-radius: 18px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+
+  animation: fadeUp 0.8s ease-out both;
+}
+
+.letter p {
+  font-size: clamp(18px, 1.6vw, 26px);
+  line-height: 1.75;
+  margin: 14px auto;
+  max-width: 70ch;
+  text-align: center;
+  font-size: 26px;
+  line-height: 1.7;
+  font-style: italic;
+}
+
+.middle {
+  color: var(--accent);
+  font-family: "Playwrite AT", cursive;
+  font-weight: 800;
+  font-style: italic;
+  margin: 36px auto;
+}
+
+.divider {
+  display: block;
+  margin: 14px auto;
+  width: 520px;
+  height: auto;
+  opacity: 0.95;
+}
+
+.initials {
+  text-align: center;
+  font-family: "Playwrite AT", cursive;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+.heart {
+  color: var(--accent);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
